@@ -1,0 +1,17 @@
+.login-page {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vw;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vw;
+  background-color: #3a2d5c;
+  width: 50%;
+  flex-direction: column;
+}

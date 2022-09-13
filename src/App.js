@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import DetailPage from './pages/DetailPage';
+import HomePage from './pages/HomePage';
+
+import './App.css'
+import LoginPage from './pages/LoginPage';
+import { PrivateRoute } from './components/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route
+            path="/home"
+            element={
+                <PrivateRoute>
+                    <HomePage />
+                </PrivateRoute>
+            }
+        />
+        <Route
+            path="/detail/:id"
+            element={
+                <PrivateRoute>
+                    <DetailPage />
+                </PrivateRoute>
+            }
+        />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+      
     </div>
   );
 }
