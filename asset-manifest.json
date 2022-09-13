@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/studio-ghibli-web/static/css/main.162cddd0.css",
+    "main.js": "/studio-ghibli-web/static/js/main.e4cc5621.js",
+    "static/js/787.70639f84.chunk.js": "/studio-ghibli-web/static/js/787.70639f84.chunk.js",
+    "static/media/banner-login.png": "/studio-ghibli-web/static/media/banner-login.19822478513873555297.png",
+    "index.html": "/studio-ghibli-web/index.html",
+    "main.162cddd0.css.map": "/studio-ghibli-web/static/css/main.162cddd0.css.map",
+    "main.e4cc5621.js.map": "/studio-ghibli-web/static/js/main.e4cc5621.js.map",
+    "787.70639f84.chunk.js.map": "/studio-ghibli-web/static/js/787.70639f84.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.162cddd0.css",
+    "static/js/main.e4cc5621.js"
+  ]
+}
